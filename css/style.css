@@ -14,10 +14,31 @@
     color: #707070;
 }
 .banner{
-    background-image: url(../images/banner.png);
+    background-image: url(../images/banner.png), url(../images/Rectangle\ 5.png);
     background-position: center;
     background-size: cover;
     height: 60vh;
     background-repeat: no-repeat;
-    background-blend-mode: overlay;
+    background-blend-mode: multiply;
+}
+
+/* .carousel-item{
+  background-image: url(../images/banner.png), url(../images/Rectangle\ 7.png);
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+} */
+
+.carousel-item::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(29,29,29);
+  opacity: 0.6;
 }
